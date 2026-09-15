@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lolayoung</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+BR+Guides&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="images/lolayoung.jpg" alt="logo giff">
+    <main>
+    <header class="site-header">
+        <a class="logo" href="#top">lolayoung</a>
+
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        ☰
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#music">Music</a>
+            <a href="#shows">Shows</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main id="top">
+
+    </main>
+    <main>
+        <section>
+            <p class="eyebrow">Album Release Date 10/10/26</p>
+            <h1>lolayoung</h1>
+            <img class="feature-image" src="images/hero.jpg.jpg" alt="girl girl">
+            <p>Its happening...</p>
+            <p>
+                <a href="#gallery">View Shows</a>
+                <a href="#new cry cry cry video">Listen Now</a>
+            </p>
+        </section>
+
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="section-inner two-column">
+                <p>About the band</p>
+                <h2>Raw sound. Loud rooms. No filler.</h2>
+                <p>Watch Lola take the world by storm.</p>
+            </div>
+        </section>
+        <section id="music">
+            <p class="eyebrow">Featured releases</p>
+            <h2>Start with these tracks</h2>
+
+            <article>
+                <h4>Mezmorized</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed neque at turpis facilisis posuere.</p>
+            </article>
+
+            <article>
+                <h4>2good2btrue</h4>
+                <p>Donec in magna ut lectus laoreet fermentum. Maecenas dictum arcu eget sapien malesuada.</p>
+            </article>
+
+            <article>
+                <h4>All The Way Back</h4>
+                <p>Aliquam erat volutpat. Sed euismod, lorem vel vehicula tristique, leo lectus malesuada erat.</p>
+            </article>
+        </section>
+        <section id="shows">
+            <p>Tour dates</p>
+            <h2>See the next show!!!</h2>
+            <img class="album-cover" src="images/about2.jpg" alt="album conver of concided">
+
+            <article>
+                <h3>Denver, CO</h3>
+                <img class="album-cover" src="images/about.jpg" alt="messy album cover">
+                <p>October 4</p>
+                <p>stubhub</p>
+                <p><a class="button" href="https://www.stubhub.com/?=&PCID=PSUSADWHOME7844713966CE73&MetroRegionID=&psc=&ps=&ps_p=0&ps_c=24125374752&ps_ag=196971813537&ps_tg=kwd-113741604&ps_ad=820692970218&ps_adp=&ps_fi=&ps_li=&ps_lp=9029202&ps_n=g&ps_d=c&ps_ex=&pscpag=&gcid=C12289X486&utm_source=google&utm_medium=paid-search&utm_sub_medium=prospecting&utm_term=nb&utm_campaign=24125374752:default&utm_content=default&keyword=196971813537_kwd-113741604_c&creative=820692970218&utm_kxconfid=s2rshsbmv&kwt=nb&mt=e&kw=stubhub&gad_source=1&gad_campaignid=24125374752&gbraid=0AAAAAD3ylY0VxqltcOu46Xu4b_2Q_tm2K&gclid=Cj0KCQjw4orUBhCjARIsAIbF3qz10vUvv06CKoWdODusiEczianArZmxFc9vBsB_2M1b84wczogxI70aAv0uEALw_wcB">Buy Tickets Here
+                </a></p>
+            </article>
+
+            <article>
+                <h3>Salt Lake City, UT</h3>
+                <p>October 12</p>
+                <p>The Depot</p>
+                <p><a class="button" href="#">Tickets for Salt Lake City</a></p>
+            </article>
+
+            <article>
+                <h3>Albuquerque, NM</h3>
+                <p>October 19</p>
+                <p>Launchpad</p>
+                <p><a class="button" href="#">Tickets for Albuquerque</a></p>
+            </article>
+        </section>
+       
+  </main>
+    <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const siteNav = document.querySelector(".site-nav");
+
+     menuButton.addEventListener("click", function () {
+    siteNav.classList.toggle("is-open");
+
+    const isOpen = siteNav.classList.contains("is-open");
+    menuButton.setAttribute("aria-expanded", isOpen);
+  });
+    </script>
+</body> 
+</html>
